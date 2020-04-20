@@ -1,7 +1,7 @@
 const fs = require('fs');
 const papa = require('papaparse');
-const file = fs.createReadStream('quiz-time.csv');
-const answers = require('./q_and_a/answers.json');
+const file = fs.createReadStream('answers.csv');
+const answers = require('./q_and_a/answer-key.json');
 const answersArray = Object.values(answers);
 
 papa.parse(file, {
