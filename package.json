@@ -1,7 +1,7 @@
 {
   "name": "quiz-machine",
   "version": "1.0.0",
-  "description": "",
+  "description": "Tool to mark quiz answers from a csv file.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,5 +11,9 @@
   "license": "ISC",
   "dependencies": {
     "papaparse": "^5.1.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YusraRashid/quiz-marking-tool"
   }
 }
