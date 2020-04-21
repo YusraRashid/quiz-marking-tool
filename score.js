@@ -10,10 +10,8 @@ papa.parse(file, {
 });
 
 function calculateResults(rows) {
-    // Remove the first row from the excel sheet as its the headings/questions
     const answerRows = rows.data.filter((row, index) => index !== 0);
 
-    // Loop through each row and check if answers are correct or not
     answerRows.forEach(row => {
         const [ time, name, ...userAnswers ] = row;
         console.log(name);
@@ -22,13 +20,6 @@ function calculateResults(rows) {
             const formattedAnswer = convertToComparableString(answer);
             const correctAnswer = answersArray[answerIndex];
             const isCorrect = formattedAnswer === correctAnswer;
-
-            // Uncomment the following code to see what is happening
-            // console.log(`${answerIndex + 1}.`, answer);
-            // console.log('  -> Converted:', formattedAnswer);
-            // console.log('  ->    Answer:', correctAnswer);
-            // console.log('  ->   Correct:', isCorrect);
-            // console.log(' ');
 
             if (isCorrect) {
                 return totalCorrect + 1;
