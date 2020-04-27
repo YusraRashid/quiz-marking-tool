@@ -52,4 +52,6 @@ function sortResults(scores) {
 function calculateAndDisplayResults(rows) {
     const scores = calculateResults(rows);
     sortResults(scores);
+
+    return;
 }
