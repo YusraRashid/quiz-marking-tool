@@ -44,7 +44,7 @@ function convertToComparableString(answer) {
 
 function sortResults(scores) {
     const sortedScores = scores.sort(function(a, b) {
-        return (a.score - b.score) * -1
+        return (b.score - a.score)
     })
     console.log(sortedScores);
 }
