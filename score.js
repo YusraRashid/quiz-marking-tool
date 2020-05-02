@@ -6,15 +6,15 @@ const answersArray = Object.values(answers);
 
 papa.parse(file, {
     worker: true,
-    complete: calculateResults,
+    complete: calculateAndDisplayResults,
 });
 
-function calculateResults(rows) {
+const calculateResults = (rows) => {
+    let scores = [];
     const answerRows = rows.data.filter((row, index) => index !== 0);
 
     answerRows.forEach(row => {
-        const [ time, name, ...userAnswers ] = row;
-        console.log(name);
+        const [time, name, ...userAnswers ] = row;
 
         const correctAnswers = userAnswers.reduce((totalCorrect, answer, answerIndex) => {
             const formattedAnswer = convertToComparableString(answer);
@@ -28,15 +28,20 @@ function calculateResults(rows) {
             }
         }, 0);
 
-        console.log(`Total Correct for ${name}:`, correctAnswers);
-        console.log(' ');
+        return scores.push({name, score: correctAnswers});
     });
-
+    return scores;
 }
 
-function convertToComparableString(answer) {
-    return answer
-        .replace(/[.,\/#!$%\^&\*’';:{}=\-_`~()]/g, '')
-        .replace(/\s+/g, '')
-        .toLowerCase();
+const convertToComparableString = (answer) => answer
+    .replace(/[.,\/#!$%\^&\*’';:{}=\-_`~()]/g, '')
+    .replace(/\s+/g, '')
+    .toLowerCase();
+
+const sortedResults = (scores) => scores.sort((a, b) => (b.score - a.score));
+
+function calculateAndDisplayResults(rows) {
+    const scores = calculateResults(rows);
+    const leaderBoard = sortedResults(scores);
+    console.log(leaderBoard);
 }

@@ -15,5 +15,8 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/YusraRashid/quiz-marking-tool"
+  },
+  "devDependencies": {
+    "prettier": "2.0.5"
   }
 }
