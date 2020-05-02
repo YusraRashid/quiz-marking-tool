@@ -44,5 +44,4 @@ function calculateAndDisplayResults(rows) {
     const scores = calculateResults(rows);
     const leaderBoard = sortedResults(scores);
     console.log(leaderBoard);
-    return;
 }
