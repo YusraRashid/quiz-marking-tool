@@ -28,21 +28,24 @@ function calculateResults(rows) {
             }
         }, 0);
 
-        return scores.push({'name': name,
-        'score': correctAnswers});
-        
+        return scores.push(
+            {
+                'name': name,
+                'score': correctAnswers
+            }
+        );
     });
     return scores;
 }
 
-function convertToComparableString(answer) {
+const convertToComparableString = (answer) => {
     return answer
         .replace(/[.,\/#!$%\^&\*’';:{}=\-_`~()]/g, '')
         .replace(/\s+/g, '')
         .toLowerCase();
 }
 
-function sortResults(scores) {
+const sortResults = (scores) => {
     const sortedScores = scores.sort(function(a, b) {
         return (b.score - a.score)
     })
