@@ -28,7 +28,11 @@ const calculateResults = (rows) => {
             }
         }, 0);
 
-        return scores.push({name, score: correctAnswers});
+        return scores.push(
+            {
+                name,
+                score: correctAnswers
+            });
     });
     return scores;
 }
