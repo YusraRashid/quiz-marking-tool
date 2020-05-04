@@ -14,5 +14,4 @@ Marks and displays quiz results that have been collected via Google Forms.
 
 ## Next Iterations
 
-1. Display results in order.
-2. Accommodate for spelling mistakes.
+1. Accommodate for spelling mistakes.
