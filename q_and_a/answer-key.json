@@ -1,26 +1,82 @@
 {
-  "1": "",
-  "2": "",
-  "3": "",
-  "4": "",
-  "5": "",
-  "6": "",
-  "7": "",
-  "8": "",
-  "9": "",
-  "10": "",
-  "11": "",
-  "12": "",
-  "13": "",
-  "14": "",
-  "15": "",
-  "16": "",
-  "17": "",
-  "18": "",
-  "19": "",
-  "20": "",
-  "21": "",
-  "22": "",
-  "23": "",
-  "24": ""
+  "1": {
+    "answer": "",
+    "incorrectAnswers": []
+  },
+  "2": {
+    "answer": "",
+    "incorrectAnswers": []
+  },
+  "3": {
+    "answer": "",
+    "incorrectAnswers": []
+  },
+  "4": {
+    "answer": "",
+    "incorrectAnswers": []
+  },
+  "5": {
+    "answer": "",
+    "incorrectAnswers": []
+  },
+  "6": {
+    "answer": "",
+    "incorrectAnswers": []
+  },
+  "7": {
+    "answer": "",
+    "incorrectAnswers": []
+  },
+  "8": {
+    "answer": "",
+    "incorrectAnswers": []
+  },
+  "9": {
+    "answer": "",
+    "incorrectAnswers": []
+  },
+  "10": {
+    "answer": "",
+    "incorrectAnswers": []
+  },
+  "11": {
+    "answer": "",
+    "incorrectAnswers": []
+  },
+  "12": {
+    "answer": "",
+    "incorrectAnswers": []
+  },
+  "13": {
+    "answer": "",
+    "incorrectAnswers": []
+  },
+  "14": {
+    "answer": "",
+    "incorrectAnswers": []
+  },
+  "15": {
+    "answer": "",
+    "incorrectAnswers": []
+  },
+  "16": {
+    "answer": "",
+    "incorrectAnswers": []
+  },
+  "17": {
+    "answer": "",
+    "incorrectAnswers": []
+  },
+  "18": {
+    "answer": "",
+    "incorrectAnswers": []
+  },
+  "19": {
+    "answer": "",
+    "incorrectAnswers": []
+  },
+  "20": {
+    "answer": "",
+    "incorrectAnswers": []
+  }
 }
