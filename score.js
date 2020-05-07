@@ -23,6 +23,7 @@ const calculateResults = (rows) => {
             const incorrectAnswers = answersArray[answerIndex].incorrectAnswers;
             const distanceBetweenWords = levenshtein(correctAnswer, formattedUserResponse);
             const isCorrect = distanceBetweenWords < 3 && !incorrectAnswers.includes(formattedUserResponse);
+            console.log(correctAnswer, formattedUserResponse, distanceBetweenWords, isCorrect)
 
             if (isCorrect) {
                 return totalCorrect + 1;
