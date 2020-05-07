@@ -20,8 +20,8 @@ const calculateResults = (rows) => {
         const correctAnswers = userAnswers.reduce((totalCorrect, answer, answerIndex) => {
             const formattedAnswer = convertToComparableString(answer);
             const correctAnswer = answersArray[answerIndex];
-            const distanceBetweenWords = levenshtein(formattedAnswer, correctAnswer);
-            const isCorrect = formattedAnswer === correctAnswer && distanceBetweenWords < 3;
+            const distanceBetweenWords = levenshtein(correctAnswer, formattedAnswer);
+            const isCorrect = distanceBetweenWords < 3;
 
             if (isCorrect) {
                 return totalCorrect + 1;
