@@ -1,5 +1,6 @@
 const fs = require('fs');
 const papa = require('papaparse');
+const levenshtein = require('js-levenshtein');
 const file = fs.createReadStream('answers.csv');
 const answers = require('./q_and_a/answer-key.json');
 const answersArray = Object.values(answers);
@@ -19,7 +20,8 @@ const calculateResults = (rows) => {
         const correctAnswers = userAnswers.reduce((totalCorrect, answer, answerIndex) => {
             const formattedAnswer = convertToComparableString(answer);
             const correctAnswer = answersArray[answerIndex];
-            const isCorrect = formattedAnswer === correctAnswer;
+            const distanceBetweenWords = levenshtein(correctAnswer, formattedAnswer);
+            const isCorrect = distanceBetweenWords < 3;
 
             if (isCorrect) {
                 return totalCorrect + 1;
