@@ -14,5 +14,5 @@ Marks and displays quiz results that have been collected via Google Forms.
 
 ## Next Iterations
 
-1. Blacklist obvious incorrect answers.
+1. Option to add multiple correct answers.
 2. Front end for displaying results.
