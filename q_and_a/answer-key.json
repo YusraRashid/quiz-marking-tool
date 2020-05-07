@@ -1,98 +1,169 @@
 {
   "1": {
-    "answer": "",
+    "answer": "lxxv",
     "incorrectAnswers": []
   },
   "2": {
-    "answer": "",
+    "answer": "scafellpike",
     "incorrectAnswers": []
   },
   "3": {
-    "answer": "",
+    "answer": "agathachristie",
     "incorrectAnswers": []
   },
   "4": {
-    "answer": "",
-    "incorrectAnswers": []
+    "answer": "thursday",
+    "incorrectAnswers": [
+      "monday",
+      "tuesday",
+      "wednesday",
+      "friday",
+      "saturday",
+      "sunday"
+    ]
   },
   "5": {
-    "answer": "",
+    "answer": "cashew",
     "incorrectAnswers": []
   },
   "6": {
-    "answer": "",
+    "answer": "vaticancity",
     "incorrectAnswers": []
   },
   "7": {
-    "answer": "",
+    "answer": "army",
     "incorrectAnswers": []
   },
   "8": {
-    "answer": "",
+    "answer": "france",
     "incorrectAnswers": []
   },
   "9": {
-    "answer": "",
+    "answer": "30",
     "incorrectAnswers": []
   },
   "10": {
-    "answer": "",
+    "answer": "dong",
     "incorrectAnswers": []
   },
   "11": {
-    "answer": "",
+    "answer": "donaldtrump",
     "incorrectAnswers": []
   },
   "12": {
-    "answer": "",
+    "answer": "adalovelace",
     "incorrectAnswers": []
   },
   "13": {
-    "answer": "",
+    "answer": "indiragandhi",
     "incorrectAnswers": []
   },
   "14": {
-    "answer": "",
+    "answer": "rosaparks",
     "incorrectAnswers": []
   },
   "15": {
-    "answer": "",
+    "answer": "isaacnewton",
     "incorrectAnswers": []
   },
   "16": {
-    "answer": "",
+    "answer": "neilarmstrong",
     "incorrectAnswers": []
   },
   "17": {
-    "answer": "",
+    "answer": "georgeorwell",
     "incorrectAnswers": []
   },
   "18": {
-    "answer": "",
+    "answer": "stevejobs",
     "incorrectAnswers": []
   },
   "19": {
-    "answer": "",
+    "answer": "mariecurie",
     "incorrectAnswers": []
   },
   "20": {
-    "answer": "",
+    "answer": "cocochanel",
     "incorrectAnswers": []
   },
   "21": {
-    "answer": "",
+    "answer": "northernireland",
     "incorrectAnswers": []
   },
   "22": {
-    "answer": "",
+    "answer": "cambodia",
     "incorrectAnswers": []
   },
   "23": {
-    "answer": "",
+    "answer": "italy",
     "incorrectAnswers": []
   },
   "24": {
-    "answer": "",
+    "answer": "chile",
+    "incorrectAnswers": []
+  },
+  "25": {
+    "answer": "greece",
+    "incorrectAnswers": []
+  },
+  "26": {
+    "answer": "jordan",
+    "incorrectAnswers": []
+  },
+  "27": {
+    "answer": "turkey",
+    "incorrectAnswers": []
+  },
+  "28": {
+    "answer": "vietnam",
+    "incorrectAnswers": []
+  },
+  "29": {
+    "answer": "germany",
+    "incorrectAnswers": []
+  },
+  "30": {
+    "answer": "bolivia",
+    "incorrectAnswers": []
+  },
+  "31": {
+    "answer": "rickastley",
+    "incorrectAnswers": []
+  },
+  "32": {
+    "answer": "neildiamond",
+    "incorrectAnswers": []
+  },
+  "33": {
+    "answer": "adele",
+    "incorrectAnswers": []
+  },
+  "34": {
+    "answer": "eltonjohn",
+    "incorrectAnswers": []
+  },
+  "35": {
+    "answer": "oasis",
+    "incorrectAnswers": []
+  },
+  "36": {
+    "answer": "5ive",
+    "incorrectAnswers": []
+  },
+  "37": {
+    "answer": "bonjovi",
+    "incorrectAnswers": []
+  },
+  "38": {
+    "answer": "edsheeran",
+    "incorrectAnswers": []
+  },
+  "39": {
+    "answer": "theweeknd",
+    "incorrectAnswers": []
+  },
+  "40": {
+    "answer": "carlyraejepsen",
     "incorrectAnswers": []
   }
 }
