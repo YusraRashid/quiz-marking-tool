@@ -1,5 +1,7 @@
 # Quiz Marking Tool
 
+### Demo branch is kept up-to-date with Master. Contains dummy data for demo purposes.
+
 ## Features
 
 - Marks and displays quiz results that have been collected via Google Forms.
