@@ -15,13 +15,14 @@ const calculateResults = (rows) => {
     const answerRows = rows.data.filter((row, index) => index !== 0);
 
     answerRows.forEach(row => {
-        const [time, name, ...userAnswers ] = row;
+        const [time, name, ...userResponses ] = row;
 
-        const correctAnswers = userAnswers.reduce((totalCorrect, answer, answerIndex) => {
-            const formattedAnswer = convertToComparableString(answer);
-            const correctAnswer = answersArray[answerIndex];
-            const distanceBetweenWords = levenshtein(correctAnswer, formattedAnswer);
-            const isCorrect = distanceBetweenWords < 3;
+        const correctAnswers = userResponses.reduce((totalCorrect, userResponse, answerIndex) => {
+            const formattedUserResponse = convertToComparableString(userResponse);
+            const correctAnswer = answersArray[answerIndex].answer;
+            const incorrectAnswers = answersArray[answerIndex].incorrectAnswers;
+            const distanceBetweenWords = levenshtein(correctAnswer, formattedUserResponse);
+            const isCorrect = distanceBetweenWords < 3 && !incorrectAnswers.includes(formattedUserResponse);
 
             if (isCorrect) {
                 return totalCorrect + 1;
