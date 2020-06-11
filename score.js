@@ -10,7 +10,7 @@ papa.parse(file, {
     complete: calculateAndDisplayResults,
 });
 
-const calculateResults = (rows) => {
+function calculateResults(rows) {
     let scores = [];
     const answerRows = rows.data.filter((row, index) => index !== 0);
 
@@ -19,10 +19,12 @@ const calculateResults = (rows) => {
 
         const correctAnswers = userResponses.reduce((totalCorrect, userResponse, answerIndex) => {
             const formattedUserResponse = convertToComparableString(userResponse);
-            const correctAnswer = answersArray[answerIndex].answer;
-            const incorrectAnswers = answersArray[answerIndex].incorrectAnswers;
-            const distanceBetweenWords = levenshtein(correctAnswer, formattedUserResponse);
-            const isCorrect = distanceBetweenWords < 3 && !incorrectAnswers.includes(formattedUserResponse);
+            const solutions = answersArray[answerIndex]
+            const correctAnswers = solutions.answers;
+            const incorrectAnswers = solutions.incorrectAnswers;
+            const distanceFromCorrectAnswer = distanceBetweenWords(correctAnswers, formattedUserResponse);
+            console.log("hi", distanceFromCorrectAnswer);
+            const isCorrect = distanceFromCorrectAnswer < 2 && !incorrectAnswers.includes(formattedUserResponse);
 
             if (isCorrect) {
                 return totalCorrect + 1;
@@ -39,6 +41,10 @@ const calculateResults = (rows) => {
     });
     return scores;
 }
+
+const distanceBetweenWords = (correctAnswers, formattedUserResponse) => correctAnswers.map((correctAnswer) => {
+    levenshtein(correctAnswer, formattedUserResponse);
+});
 
 const convertToComparableString = (answer) => answer
     .replace(/[.,\/#!$%\^&\*’';:{}=\-_`~()]/g, '')

@@ -1,0 +1,11 @@
+How to allow for multiple entries:
+
+arrayOfPossibleAnswers = answersArray[answerIndex].answers
+
+with formattedAnswer, perform distance operation forEach of the possibleAnswers. If distance < 2 then answer is correct
+
+
+
+
+
+Actually, instead of forEach, use a map to create a new array of numbersOfDistance. if either of those numbers of distance is less than 3, isCorrect = true. 

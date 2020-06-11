@@ -34,5 +34,6 @@ that it is not marked as correct.
 
 ## Next Iterations
 
-1. Option to add multiple correct answers.
-2. Front end for displaying results.
+1. Option to add multiple correct answers
+2. Front end for displaying results
+3. Add functional tests
