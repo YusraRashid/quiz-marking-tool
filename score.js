@@ -11,16 +11,15 @@ papa.parse(file, {
 });
 
 const calculateResults = (rows) => {
-    let scores = [];
-    const answerRows = rows.data.filter((index) => index !== 0);
+    const answerRows = rows.data.filter((item, index) => index !== 0);
 
     const test = answerRows.map(row => {
         const [, name, ...userResponses ] = row;
 
         const correctAnswers = userResponses.reduce((totalCorrect, userResponse, answerIndex) => {
             const formattedUserResponse = convertToComparableString(userResponse);
-            const correctAnswer = answersArray[answerIndex].answer;
-            const incorrectAnswers = answersArray[answerIndex].incorrectAnswers;
+            const correctAnswer = answersArray[answerIndex]?.answer ?? [];
+            const incorrectAnswers = answersArray[answerIndex]?.incorrectAnswers ?? [];
             const distanceBetweenWords = levenshtein(correctAnswer, formattedUserResponse);
             const isCorrect = distanceBetweenWords < 3 && !incorrectAnswers.includes(formattedUserResponse);
             
